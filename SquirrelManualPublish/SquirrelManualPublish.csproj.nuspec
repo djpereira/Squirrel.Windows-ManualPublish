@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package >
+  <metadata>
+    <!-- Use replacement tokens and your nuget package will pick up the values from the assembly information -->
+    <!-- and also your squirrel installer will use it as described in https://github.com/Squirrel/Squirrel.Windows/blob/master/docs/naming-conventions.md -->
+    <id>$id$</id>
+    <version>$version$</version>
+    <authors>$author$</authors>
+    <owners>$author$</owners>
+    <licenseUrl>http://pyrusapps.com/</licenseUrl>
+    <projectUrl>http://pyrusapps.com/</projectUrl>
+    <iconUrl>http://pyrusapps.com/</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description>$description$</description>
+    <releaseNotes>Summary of changes made in this release of the package.</releaseNotes>
+    <copyright>Copyright 2015</copyright>
+    <tags>Tag1 Tag2</tags>
+  </metadata>
+  <!-- Remove any dependencies due to defect in Squirrel.Windows -->
+  <!-- Include all files necessary for the application to run -->
+  <files>
+    <file src="bin\release\*.dll" target="lib\net46\" />
+    <file src="bin\release\$id$.exe.config" target="lib\net46\" />
+  </files>
+</package>
